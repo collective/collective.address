@@ -12,7 +12,7 @@
   <plone:behavior
       title="Address"
       description="Address behavior."
-      provides=".behavior.IAddress"
+      provides=".behaviors.IAddress"
       for="plone.dexterity.interfaces.IDexterityContent"
       />
 
