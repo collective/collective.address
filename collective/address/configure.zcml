@@ -1,0 +1,34 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.address">
+
+  <include package="plone.behavior" file="meta.zcml" />
+
+  <adapter
+      name="SearchableText"
+      factory=".behaviors.searchable_text_indexer"/>
+
+  <plone:behavior
+      title="Address"
+      description="Address behavior."
+      provides=".behavior.IAddress"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      />
+
+  <utility
+      component=".vocabulary.CountryVocabulary"
+      name="collective.address.CountryVocabulary"
+      />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.address"
+      directory="profiles/default"
+      description="Dexterity address behaviors extension."
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

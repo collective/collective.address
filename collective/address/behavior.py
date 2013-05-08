@@ -1,0 +1,60 @@
+from collective.address import messageFactory as _
+from plone.app.textfield import RichText
+from plone.autoform.interfaces import IFormFieldProvider
+from plone.indexer import indexer
+from plone.supermodel import model
+from zope import schema
+from zope.interface import alsoProvides
+
+
+class IAddress(model.Schema):
+    """Address schema.
+    """
+    street = schema.TextLine(
+        title=_(u'label_street', default=u'Street'),
+        description=_(u'help_street',
+                      default=u'The street or detailed description of the '
+                              u'address.'),
+        required=False
+    )
+    zip_code = schema.TextLine(
+        title=_(u'label_zip_code', default=u'Zip Code'),
+        description=_(u'help_zip_code',
+                      default=u'An alphanumeric Zip code.'),
+        required=False
+    )
+    city = schema.TextLine(
+        title=_(u'label_city', default=u'City'),
+        description=_(u'help_city',
+                      default=u'The name of the city, village or place.'),
+        required=False
+    )
+    country = schema.TextLine(
+        title=_(u'label_country', default=u'Country'),
+        description=_(u'help_country',
+                      default=u'Select the country from the list.'),
+        required=False
+    )
+    notes = RichText(
+        title=_(u'label_notes', default=u'Notes'),
+        description=_(u'help_notes',
+                      default=u'Additional notes for the address.'),
+        required=False,
+    )
+
+
+# Mark these interfaces as form field providers
+alsoProvides(IAddress, IFormFieldProvider)
+
+
+# Text indexing
+@indexer(IAddress)
+def searchable_text_indexer(obj):
+    acc = IAddress(obj)
+    text = ''
+    text += '%s\n' % acc.street
+    text += '%s\n' % acc.zip_code
+    text += '%s\n' % acc.city
+    text += '%s\n' % acc.country
+    text += '%s\n' % acc.notes
+    return text.strip()
