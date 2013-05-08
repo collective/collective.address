@@ -1,15 +1,17 @@
-from plone.memoize import instance
+from plone.memoize import forever
 from zope.interface import directlyProvides
 from zope.schema.interfaces import IVocabularyFactory
 from zope.schema.vocabulary import SimpleVocabulary
+from zope.schema.vocabulary import SimpleTerm
 import pycountry
 from Products.CMFPlone.utils import safe_unicode
 
 
-@instance.memoize
+@forever.memoize
 def CountryVocabulary(context):
     """Vocabulary factory for countries regarding to ISO3166.
     """
-    items = [(safe_unicode(it), it.numeric) for it in pycountry.countries]
-    return SimpleVocabulary.fromItems(items)
+    items = [SimpleTerm(value=it.numeric, title=safe_unicode(it.name))
+             for it in pycountry.countries]
+    return SimpleVocabulary(items)
 directlyProvides(CountryVocabulary, IVocabularyFactory)

@@ -29,11 +29,12 @@ class IAddress(model.Schema):
                       default=u'The name of the city, village or place.'),
         required=False
     )
-    country = schema.TextLine(
+    country = schema.Choice(
         title=_(u'label_country', default=u'Country'),
         description=_(u'help_country',
                       default=u'Select the country from the list.'),
-        required=False
+        required=False,
+        vocabulary='collective.address.CountryVocabulary'
     )
     notes = RichText(
         title=_(u'label_notes', default=u'Notes'),
