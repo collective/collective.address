@@ -1,4 +1,6 @@
+from Products.CMFCore.utils import getToolByName
 from collective.address import messageFactory as _
+from collective.address.vocabulary import get_pycountry_name
 from plone.app.textfield import RichText
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.indexer import indexer
@@ -56,6 +58,14 @@ def searchable_text_indexer(obj):
     text += '%s\n' % acc.street
     text += '%s\n' % acc.zip_code
     text += '%s\n' % acc.city
-    text += '%s\n' % acc.country
-    text += '%s\n' % acc.notes
+    text += '%s\n' % acc.country and get_pycountry_name(acc.country) or ''
+    notes = acc.notes and acc.notes.output or None
+    if notes:
+        transforms = getToolByName(obj, 'portal_transforms')
+        body_plain = transforms.convertTo(
+            'text/plain',
+            notes,
+            mimetype='text/html',
+            ).getData().strip()
+        text += body_plain
     return text.strip()
