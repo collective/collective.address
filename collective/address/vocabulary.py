@@ -18,5 +18,7 @@ directlyProvides(CountryVocabulary, IVocabularyFactory)
 
 
 def get_pycountry_name(country_id):
+    if not country_id:
+        return None
     country = pycountry.countries.get(numeric=country_id)
     return country.name
