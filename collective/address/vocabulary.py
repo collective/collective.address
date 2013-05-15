@@ -15,3 +15,8 @@ def CountryVocabulary(context):
              for it in pycountry.countries]
     return SimpleVocabulary(items)
 directlyProvides(CountryVocabulary, IVocabularyFactory)
+
+
+def get_pycountry_name(country_id):
+    country = pycountry.countries.get(numeric=country_id)
+    return country.name
