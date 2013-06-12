@@ -1,4 +1,5 @@
 from Products.CMFCore.utils import getToolByName
+from Products.CMFPlone.utils import safe_unicode
 from collective.address import messageFactory as _
 from collective.address.vocabulary import get_pycountry_name
 from plone.app.textfield import RichText
@@ -68,4 +69,4 @@ def searchable_text_indexer(obj):
             mimetype='text/html',
             ).getData().strip()
         text += body_plain
-    return text.strip()
+    return safe_unicode(text.strip())
