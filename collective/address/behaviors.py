@@ -15,21 +15,17 @@ class IAddress(model.Schema):
     """
     street = schema.TextLine(
         title=_(u'label_street', default=u'Street'),
-        description=_(u'help_street',
-                      default=u'The street or detailed description of the '
-                              u'address.'),
+        description=_(u'help_street', default=u''),
         required=False
     )
     zip_code = schema.TextLine(
         title=_(u'label_zip_code', default=u'Zip Code'),
-        description=_(u'help_zip_code',
-                      default=u'An alphanumeric Zip code.'),
+        description=_(u'help_zip_code', default=u''),
         required=False
     )
     city = schema.TextLine(
         title=_(u'label_city', default=u'City'),
-        description=_(u'help_city',
-                      default=u'The name of the city, village or place.'),
+        description=_(u'help_city', default=u''),
         required=False
     )
     country = schema.Choice(
