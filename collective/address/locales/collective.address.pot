@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-06-19 10:39+0000\n"
+"POT-Creation-Date: 2013-06-27 10:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,50 +17,40 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.address\n"
 
-#: collective/address/behaviors.py:28
+#: collective/address/behaviors.py:26
 msgid "help_city"
 msgstr ""
 
 #. Default: "Select the country from the list."
-#: collective/address/behaviors.py:33
+#: collective/address/behaviors.py:31
 msgid "help_country"
 msgstr ""
 
-#. Default: "Additional notes for the address."
-#: collective/address/behaviors.py:40
-msgid "help_notes"
-msgstr ""
-
-#: collective/address/behaviors.py:18
+#: collective/address/behaviors.py:16
 msgid "help_street"
 msgstr ""
 
-#: collective/address/behaviors.py:23
+#: collective/address/behaviors.py:21
 msgid "help_zip_code"
 msgstr ""
 
 #. Default: "City"
-#: collective/address/behaviors.py:27
+#: collective/address/behaviors.py:25
 msgid "label_city"
 msgstr ""
 
 #. Default: "Country"
-#: collective/address/behaviors.py:32
+#: collective/address/behaviors.py:30
 msgid "label_country"
 msgstr ""
 
-#. Default: "Notes"
-#: collective/address/behaviors.py:39
-msgid "label_notes"
-msgstr ""
-
 #. Default: "Street"
-#: collective/address/behaviors.py:17
+#: collective/address/behaviors.py:15
 msgid "label_street"
 msgstr ""
 
 #. Default: "Zip Code"
-#: collective/address/behaviors.py:22
+#: collective/address/behaviors.py:20
 msgid "label_zip_code"
 msgstr ""
 
