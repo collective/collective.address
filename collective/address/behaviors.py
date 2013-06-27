@@ -1,8 +1,6 @@
-from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import safe_unicode
 from collective.address import messageFactory as _
 from collective.address.vocabulary import get_pycountry_name
-from plone.app.textfield import RichText
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.indexer import indexer
 from plone.supermodel import model
@@ -35,12 +33,6 @@ class IAddress(model.Schema):
         required=False,
         vocabulary='collective.address.CountryVocabulary'
     )
-    notes = RichText(
-        title=_(u'label_notes', default=u'Notes'),
-        description=_(u'help_notes',
-                      default=u'Additional notes for the address.'),
-        required=False,
-    )
 
 
 # Mark these interfaces as form field providers
@@ -56,13 +48,4 @@ def searchable_text_indexer(obj):
     text += '%s\n' % acc.zip_code
     text += '%s\n' % acc.city
     text += '%s\n' % acc.country and get_pycountry_name(acc.country) or ''
-    notes = acc.notes and acc.notes.output or None
-    if notes:
-        transforms = getToolByName(obj, 'portal_transforms')
-        body_plain = transforms.convertTo(
-            'text/plain',
-            notes,
-            mimetype='text/html',
-            ).getData().strip()
-        text += body_plain
     return safe_unicode(text.strip())
