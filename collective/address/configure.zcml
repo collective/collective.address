@@ -19,6 +19,20 @@
       for="plone.dexterity.interfaces.IDexterityContent"
       />
 
+  <plone:behavior
+      title="Contact"
+      description="Contact behavior (email, phone, website, ...)."
+      provides=".behaviors.IContact"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      />
+  
+  <plone:behavior
+      title="Person"
+      description="Person behavior (name and title)."
+      provides=".behaviors.IPerson"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      />
+
   <utility
       component=".vocabulary.CountryVocabulary"
       name="collective.address.CountryVocabulary"
