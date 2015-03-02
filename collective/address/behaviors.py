@@ -91,6 +91,8 @@ class IPerson(IAddressable):
 
     # Mark these interfaces as form field providers
 alsoProvides(IAddress, IFormFieldProvider)
+alsoProvides(IContact, IFormFieldProvider)
+alsoProvides(IPerson, IFormFieldProvider)
 
 
 # Text indexing
