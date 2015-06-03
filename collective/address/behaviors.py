@@ -1,11 +1,18 @@
 from Products.CMFPlone.utils import safe_unicode
 from collective.address import messageFactory as _
 from collective.address.vocabulary import get_pycountry_name
+from plone.app.content.interfaces import INameFromTitle
+from plone.app.dexterity import PloneMessageFactory as _PMF
+from plone.autoform import directives as form
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.indexer import indexer
 from plone.supermodel import model
+from z3c.form.interfaces import IAddForm
+from z3c.form.interfaces import IEditForm
 from zope import schema
+from zope.component import adapter
 from zope.interface import alsoProvides
+from zope.interface import implementer
 
 
 class IAddressable(model.Schema):
@@ -89,10 +96,48 @@ class IPerson(IAddressable):
         required=False
     )
 
-    # Mark these interfaces as form field providers
+    title = schema.TextLine(
+        title=_PMF(u'label_title', default=u'Title'),
+        required=False,
+        missing_value=u''
+    )
+    description = schema.Text(
+        title=_PMF(u'label_description', default=u'Summary'),
+        description=_PMF(
+            u'help_description',
+            default=u'Used in item listings and search results.'
+        ),
+        required=False,
+        missing_value=u''
+    )
+    form.omitted('title', 'description')
+    form.no_omit(IEditForm, 'description')
+    form.no_omit(IAddForm, 'description')
+
+
+# Mark these interfaces as form field providers
 alsoProvides(IAddress, IFormFieldProvider)
 alsoProvides(IContact, IFormFieldProvider)
 alsoProvides(IPerson, IFormFieldProvider)
+
+
+@implementer(INameFromTitle)
+@adapter(IPerson)
+class NameFromPerson(object):
+
+    def __new__(cls, context):
+        title = '{0}{1}{2}'.format(
+            context.last_name,
+            ', ' if context.first_name else '',
+            context.first_name
+        )
+        instance = super(NameFromPerson, cls).__new__(cls)
+        instance.title = title
+        context.title = title
+        return instance
+
+    def __init__(self, context):
+        pass
 
 
 # Text indexing

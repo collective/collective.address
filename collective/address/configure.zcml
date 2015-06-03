@@ -33,6 +33,8 @@
       for="plone.dexterity.interfaces.IDexterityContent"
       />
 
+  <adapter factory=".behaviors.NameFromPerson" />
+
   <utility
       component=".vocabulary.CountryVocabulary"
       name="collective.address.CountryVocabulary"
