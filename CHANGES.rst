@@ -4,6 +4,9 @@ Changelog
 1.2 (unreleased)
 ----------------
 
+- Require the last_name attribute of IPerson behavior.
+  [thet]
+
 - For the IPerson behavior, compute the title from first and last name and add
   title (not required, hidden) and description to the IPerson behavior.
   [thet]
