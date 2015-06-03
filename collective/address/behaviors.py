@@ -88,7 +88,7 @@ class IPerson(IAddressable):
     last_name = schema.TextLine(
         title=_(u'label_last_name', default=u'Last Name'),
         description=_(u'help_last_name', default=u''),
-        required=False
+        required=True
     )
     academic_title = schema.TextLine(
         title=_(u'label_academic_titel', default=u'Academic title'),
