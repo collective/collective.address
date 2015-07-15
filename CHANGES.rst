@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2 (unreleased)
+1.2 (2015-07-15)
 ----------------
 
 - Require the last_name attribute of IPerson behavior.
