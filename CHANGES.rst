@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3 (unreleased)
+1.3 (2015-07-21)
 ----------------
 
 - Let IAddressable not derive from schema.Model to have a pure marker
