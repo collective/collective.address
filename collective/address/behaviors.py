@@ -11,16 +11,17 @@ from z3c.form.interfaces import IAddForm
 from z3c.form.interfaces import IEditForm
 from zope import schema
 from zope.component import adapter
+from zope.interface import Interface
 from zope.interface import alsoProvides
 from zope.interface import implementer
 
 
-class IAddressable(model.Schema):
-    """Abstract marker interface / schema class.
+class IAddressable(Interface):
+    """Abstract marker interface.
     """
 
 
-class IAddress(IAddressable):
+class IAddress(model.Schema, IAddressable):
     """Address schema.
     """
     street = schema.TextLine(
@@ -47,7 +48,7 @@ class IAddress(IAddressable):
     )
 
 
-class IContact(IAddressable):
+class IContact(model.Schema, IAddressable):
     """Contact schema.
     """
     email = schema.TextLine(
@@ -77,7 +78,7 @@ class IContact(IAddressable):
     )
 
 
-class IPerson(IAddressable):
+class IPerson(model.Schema, IAddressable):
     """Person schema.
     """
     first_name = schema.TextLine(
@@ -141,34 +142,38 @@ class NameFromPerson(object):
 
 
 # Text indexing
-@indexer(IAddressable)
-def searchable_text_indexer(obj):
-    text = u''
+def searchable_text(obj):
+    items = []
+
     acc = IAddress(obj, None)
     if acc:
-        text = u'{0}{1}{2}{3}{4}'.format(
-            text,
+        items += [
             safe_unicode(acc.street) or '',
             safe_unicode(acc.zip_code) or '',
             safe_unicode(acc.city) or '',
             safe_unicode(get_pycountry_name(acc.country)) if acc.country else ''  # noqa
-        )
+        ]
+
     acc = IContact(obj, None)
     if acc:
-        text = u'{0}{1}{2}{3}{4}{5}'.format(
-            text,
+        items += [
             safe_unicode(acc.email) or '',
             safe_unicode(acc.website) or '',
             safe_unicode(acc.phone) or '',
             safe_unicode(acc.mobile) or '',
             safe_unicode(acc.fax) or '',
-        )
+        ]
+
     acc = IPerson(obj, None)
     if acc:
-        text = u'{0}{1}{2}{3}'.format(
-            text,
+        items += [
             safe_unicode(acc.first_name) or '',
-            safe_unicode(acc.last_name) or '',
-            safe_unicode(acc.academic_title) or '',
-        )
-    return text.strip()
+            safe_unicode(acc.last_name) or ''
+        ]
+
+    return u' '.join(items).strip()
+
+
+@indexer(IAddressable)
+def searchable_text_indexer(obj):
+    return searchable_text(obj)

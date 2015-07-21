@@ -4,7 +4,12 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Let IAddressable not derive from schema.Model to have a pure marker
+  Interface.
+  [thet]
+
+- Make sure, all SearchableText parts are seperated by a space.
+  [thet]
 
 
 1.2 (2015-07-15)
