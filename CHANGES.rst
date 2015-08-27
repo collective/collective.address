@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.4 (unreleased)
-----------------
+1.3.1 (2015-08-27)
+------------------
 
 - Fix error on creating the title for Person types with non-ascii characters in
   names.
