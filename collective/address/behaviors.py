@@ -127,7 +127,7 @@ alsoProvides(IPerson, IFormFieldProvider)
 class NameFromPerson(object):
 
     def __new__(cls, context):
-        title = '{0}{1}{2}'.format(
+        title = u'{0}{1}{2}'.format(
             context.last_name,
             ', ' if context.first_name else '',
             context.first_name

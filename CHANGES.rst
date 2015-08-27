@@ -4,7 +4,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix error on creating the title for Person types with non-ascii characters in
+  names.
+  [thet]
 
 
 1.3 (2015-07-21)
