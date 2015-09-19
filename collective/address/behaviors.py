@@ -141,6 +141,20 @@ class NameFromPerson(object):
         pass
 
 
+def _concat_and_utf8(*args):
+    """Concats args with spaces between and returns utf-8 string, it does not
+    matter if input was unicode or str.
+    Taken from ``plone.app.contenttypes.indexers``
+    """
+    result = ''
+    for value in args:
+        if isinstance(value, unicode):
+            value = value.encode('utf-8', 'replace')
+        if value:
+            result = ' '.join((result, value))
+    return result
+
+
 # Text indexing
 def searchable_text(obj):
     items = []
@@ -171,7 +185,8 @@ def searchable_text(obj):
             safe_unicode(acc.last_name) or ''
         ]
 
-    return u' '.join(items).strip()
+    ret = _concat_and_utf8(*items)
+    return ret
 
 
 @indexer(IAddressable)

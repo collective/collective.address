@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.4 (unreleased)
-----------------
+1.3.2 (unreleased)
+------------------
 
-- Nothing changed yet.
+- Encode SearchableText indexer result in utf-8.
+  [thet]
 
 
 1.3.1 (2015-08-27)
