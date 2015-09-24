@@ -116,10 +116,36 @@ class IPerson(model.Schema, IAddressable):
     form.no_omit(IAddForm, 'description')
 
 
+class ISocial(model.Schema, IAddressable):
+    """Social media schema.
+    """
+    facebook_url = schema.TextLine(
+        title=_(u'label_facebook_url', default=u'Facebook URL'),
+        description=_(u'help_facebook_url', default=u''),
+        required=False
+    )
+    twitter_url = schema.TextLine(
+        title=_(u'label_twitter_url', default=u'Twitter URL'),
+        description=_(u'help_twitter_url', default=u''),
+        required=False
+    )
+    google_plus_url = schema.TextLine(
+        title=_(u'label_google_plus_url', default=u'Google Plus URL'),
+        description=_(u'help_google_plus_url', default=u''),
+        required=False
+    )
+    instagram_url = schema.TextLine(
+        title=_(u'label_instagram_url', default=u'Instagram URL'),
+        description=_(u'help_instagram_url', default=u''),
+        required=False
+    )
+
+
 # Mark these interfaces as form field providers
 alsoProvides(IAddress, IFormFieldProvider)
 alsoProvides(IContact, IFormFieldProvider)
 alsoProvides(IPerson, IFormFieldProvider)
+alsoProvides(ISocial, IFormFieldProvider)
 
 
 @implementer(INameFromTitle)

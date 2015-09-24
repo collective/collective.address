@@ -10,6 +10,9 @@ Changelog
 1.3.2 (2015-09-24)
 ------------------
 
+- Added behavior for social media urls.
+  [agitator]
+
 - Encode SearchableText indexer result in utf-8.
   [thet]
 

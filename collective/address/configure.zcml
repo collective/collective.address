@@ -25,11 +25,18 @@
       provides=".behaviors.IContact"
       for="plone.dexterity.interfaces.IDexterityContent"
       />
-  
+
   <plone:behavior
       title="Person"
       description="Person behavior (name and title)."
       provides=".behaviors.IPerson"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      />
+
+  <plone:behavior
+      title="Social"
+      description="Social media behavior (Facebook, Twitter, ...)."
+      provides=".behaviors.ISocial"
       for="plone.dexterity.interfaces.IDexterityContent"
       />
 
