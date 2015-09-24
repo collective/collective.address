@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3.2 (unreleased)
+1.3.2 (2015-09-24)
 ------------------
 
 - Encode SearchableText indexer result in utf-8.
