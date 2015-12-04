@@ -2,7 +2,7 @@ from Products.CMFPlone.utils import safe_unicode
 from collective.address import messageFactory as _
 from collective.address.vocabulary import get_pycountry_name
 from plone.app.content.interfaces import INameFromTitle
-from plone.app.dexterity import PloneMessageFactory as _PMF
+from Products.CMFPlone import PloneMessageFactory as _PMF
 from plone.autoform import directives as form
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.indexer import indexer
