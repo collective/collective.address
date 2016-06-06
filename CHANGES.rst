@@ -10,6 +10,9 @@ Changelog
 1.3.2 (2015-09-24)
 ------------------
 
+- Change all URL fields to use ``zope.schema.URI``.
+  [thet]
+
 - Added behavior for social media urls.
   [agitator]
 

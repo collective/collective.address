@@ -56,7 +56,7 @@ class IContact(model.Schema, IAddressable):
         description=_(u'help_email', default=u''),
         required=False
     )
-    website = schema.TextLine(
+    website = schema.URI(
         title=_(u'label_website', default=u'Website'),
         description=_(u'help_website', default=u''),
         required=False
@@ -119,22 +119,22 @@ class IPerson(model.Schema, IAddressable):
 class ISocial(model.Schema, IAddressable):
     """Social media schema.
     """
-    facebook_url = schema.TextLine(
+    facebook_url = schema.URI(
         title=_(u'label_facebook_url', default=u'Facebook URL'),
         description=_(u'help_facebook_url', default=u''),
         required=False
     )
-    twitter_url = schema.TextLine(
+    twitter_url = schema.URI(
         title=_(u'label_twitter_url', default=u'Twitter URL'),
         description=_(u'help_twitter_url', default=u''),
         required=False
     )
-    google_plus_url = schema.TextLine(
+    google_plus_url = schema.URI(
         title=_(u'label_google_plus_url', default=u'Google Plus URL'),
         description=_(u'help_google_plus_url', default=u''),
         required=False
     )
-    instagram_url = schema.TextLine(
+    instagram_url = schema.URI(
         title=_(u'label_instagram_url', default=u'Instagram URL'),
         description=_(u'help_instagram_url', default=u''),
         required=False
