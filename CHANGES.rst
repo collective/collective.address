@@ -1,20 +1,18 @@
 Changelog
 =========
 
-1.3.3 (unreleased)
-------------------
-
-- Nothing changed yet.
-
-
-1.3.2 (2015-09-24)
-------------------
+1.4 (unreleased)
+----------------
 
 - Change all URL fields to use ``zope.schema.URI``.
   [thet]
 
 - Added behavior for social media urls.
   [agitator]
+
+
+1.3.2 (2015-09-24)
+------------------
 
 - Encode SearchableText indexer result in utf-8.
   [thet]
