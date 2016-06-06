@@ -2,7 +2,7 @@ from Products.CMFPlone.utils import safe_unicode
 from collective.address import messageFactory as _
 from collective.address.vocabulary import get_pycountry_name
 from plone.app.content.interfaces import INameFromTitle
-from plone.app.dexterity import PloneMessageFactory as _PMF
+from Products.CMFPlone import PloneMessageFactory as _PMF
 from plone.autoform import directives as form
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.indexer import indexer
@@ -56,7 +56,7 @@ class IContact(model.Schema, IAddressable):
         description=_(u'help_email', default=u''),
         required=False
     )
-    website = schema.TextLine(
+    website = schema.URI(
         title=_(u'label_website', default=u'Website'),
         description=_(u'help_website', default=u''),
         required=False
@@ -116,10 +116,36 @@ class IPerson(model.Schema, IAddressable):
     form.no_omit(IAddForm, 'description')
 
 
+class ISocial(model.Schema, IAddressable):
+    """Social media schema.
+    """
+    facebook_url = schema.URI(
+        title=_(u'label_facebook_url', default=u'Facebook URL'),
+        description=_(u'help_facebook_url', default=u''),
+        required=False
+    )
+    twitter_url = schema.URI(
+        title=_(u'label_twitter_url', default=u'Twitter URL'),
+        description=_(u'help_twitter_url', default=u''),
+        required=False
+    )
+    google_plus_url = schema.URI(
+        title=_(u'label_google_plus_url', default=u'Google Plus URL'),
+        description=_(u'help_google_plus_url', default=u''),
+        required=False
+    )
+    instagram_url = schema.URI(
+        title=_(u'label_instagram_url', default=u'Instagram URL'),
+        description=_(u'help_instagram_url', default=u''),
+        required=False
+    )
+
+
 # Mark these interfaces as form field providers
 alsoProvides(IAddress, IFormFieldProvider)
 alsoProvides(IContact, IFormFieldProvider)
 alsoProvides(IPerson, IFormFieldProvider)
+alsoProvides(ISocial, IFormFieldProvider)
 
 
 @implementer(INameFromTitle)

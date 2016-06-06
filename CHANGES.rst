@@ -1,10 +1,14 @@
 Changelog
 =========
 
-1.3.3 (unreleased)
-------------------
+1.4 (unreleased)
+----------------
 
-- Nothing changed yet.
+- Change all URL fields to use ``zope.schema.URI``.
+  [thet]
+
+- Added behavior for social media urls.
+  [agitator]
 
 
 1.3.2 (2015-09-24)
