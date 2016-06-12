@@ -4,10 +4,17 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+New features:
+
 - Change all URL fields to use ``zope.schema.URI``.
   [thet]
 
 - Added behavior for social media urls.
+  [agitator]
+
+Bug fixes:
+
+- Update PloneMessageFactory import path.
   [agitator]
 
 
