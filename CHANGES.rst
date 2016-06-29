@@ -4,6 +4,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- Remove ``for`` attribute in behavior registrations, as this is unsupported.
+  [thet]
+
 - Change all URL fields to use ``zope.schema.URI``.
   [thet]
 
