@@ -4,6 +4,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- Add behavior shortnames.
+  [thet]
+
 - Remove ``for`` attribute in behavior registrations, as this is unsupported.
   [thet]
 

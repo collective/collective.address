@@ -14,24 +14,28 @@
 
   <plone:behavior
       title="Address"
+      name="collective.address.address"
       description="Address behavior."
       provides=".behaviors.IAddress"
       />
 
   <plone:behavior
       title="Contact"
+      name="collective.address.contact"
       description="Contact behavior (email, phone, website, ...)."
       provides=".behaviors.IContact"
       />
 
   <plone:behavior
       title="Person"
+      name="collective.address.person"
       description="Person behavior (name and title)."
       provides=".behaviors.IPerson"
       />
 
   <plone:behavior
       title="Social"
+      name="collective.address.social"
       description="Social media behavior (Facebook, Twitter, ...)."
       provides=".behaviors.ISocial"
       />
