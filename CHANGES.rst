@@ -4,6 +4,9 @@ Changelog
 1.5 (unreleased)
 ----------------
 
+- Translate country name via pycountry translation catalog.
+  [thet]
+
 - Code cleanup.
   [thet]
 

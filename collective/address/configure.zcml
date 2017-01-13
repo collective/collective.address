@@ -5,6 +5,9 @@
     i18n_domain="collective.address">
 
   <i18n:registerTranslations directory="locales" />
+  <configure package="pycountry">
+    <i18n:registerTranslations directory="locales" />
+  </configure>
 
   <include package="plone.behavior" file="meta.zcml" />
 

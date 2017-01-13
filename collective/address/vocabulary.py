@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from collective.address import _pycountry
 from Products.CMFPlone.utils import safe_unicode
 from zope.interface import implementer
 from zope.schema.interfaces import IVocabularyFactory
@@ -30,4 +31,4 @@ def get_pycountry_name(country_id):
     if not country_id:
         return None
     country = pycountry.countries.get(numeric=country_id)
-    return country.name
+    return _pycountry(country.name)
