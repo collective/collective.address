@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.5 (unreleased)
+1.5 (2017-01-13)
 ----------------
 
 - Translate country name via pycountry translation catalog.
