@@ -4,7 +4,8 @@ Changelog
 1.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Code cleanup.
+  [thet]
 
 
 1.4 (2016-10-06)

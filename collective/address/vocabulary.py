@@ -1,20 +1,29 @@
-from zope.interface import directlyProvides
-from zope.schema.interfaces import IVocabularyFactory
-from zope.schema.vocabulary import SimpleVocabulary
-from zope.schema.vocabulary import SimpleTerm
-import pycountry
+# -*- coding: utf-8 -*-
 from Products.CMFPlone.utils import safe_unicode
+from zope.interface import implementer
+from zope.schema.interfaces import IVocabularyFactory
+from zope.schema.vocabulary import SimpleTerm
+from zope.schema.vocabulary import SimpleVocabulary
+
+import pycountry
 
 
-def CountryVocabulary(context, query=None):
+@implementer(IVocabularyFactory)
+class CountryVocabulary(object):
     """Vocabulary factory for countries regarding to ISO3166.
     """
-    items = [SimpleTerm(value=it.numeric, title=safe_unicode(it.name))
-             for it in pycountry.countries
-             if query is None
-             or safe_unicode(query.lower()) in safe_unicode(it.name.lower())]
-    return SimpleVocabulary(items)
-directlyProvides(CountryVocabulary, IVocabularyFactory)
+
+    def __call__(self, context, query=None):
+        items = [
+                    SimpleTerm(value=it.numeric, title=safe_unicode(it.name))
+                    for it in pycountry.countries
+                    if query is None
+                    or safe_unicode(query.lower()) in safe_unicode(it.name.lower())  # noqa
+                ]
+        return SimpleVocabulary(items)
+
+
+CountryVocabularyFactory = CountryVocabulary()
 
 
 def get_pycountry_name(country_id):

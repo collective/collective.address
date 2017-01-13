@@ -43,7 +43,7 @@
   <adapter factory=".behaviors.NameFromPerson" />
 
   <utility
-      component=".vocabulary.CountryVocabulary"
+      component=".vocabulary.CountryVocabularyFactory"
       name="collective.address.CountryVocabulary"
       />
 

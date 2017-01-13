@@ -1,19 +1,20 @@
-from Products.CMFPlone.utils import safe_unicode
-from collective.address import messageFactory as _
+# -*- coding: utf-8 -*-
+from collective.address import _
 from collective.address.vocabulary import get_pycountry_name
 from plone.app.content.interfaces import INameFromTitle
-from Products.CMFPlone import PloneMessageFactory as _PMF
 from plone.autoform import directives as form
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.indexer import indexer
 from plone.supermodel import model
+from Products.CMFPlone import PloneMessageFactory as _PMF
+from Products.CMFPlone.utils import safe_unicode
 from z3c.form.interfaces import IAddForm
 from z3c.form.interfaces import IEditForm
 from zope import schema
 from zope.component import adapter
-from zope.interface import Interface
-from zope.interface import alsoProvides
 from zope.interface import implementer
+from zope.interface import Interface
+from zope.interface import provider
 
 
 class IAddressable(Interface):
@@ -21,6 +22,7 @@ class IAddressable(Interface):
     """
 
 
+@provider(IFormFieldProvider)
 class IAddress(model.Schema, IAddressable):
     """Address schema.
     """
@@ -48,6 +50,7 @@ class IAddress(model.Schema, IAddressable):
     )
 
 
+@provider(IFormFieldProvider)
 class IContact(model.Schema, IAddressable):
     """Contact schema.
     """
@@ -78,6 +81,7 @@ class IContact(model.Schema, IAddressable):
     )
 
 
+@provider(IFormFieldProvider)
 class IPerson(model.Schema, IAddressable):
     """Person schema.
     """
@@ -116,6 +120,7 @@ class IPerson(model.Schema, IAddressable):
     form.no_omit(IAddForm, 'description')
 
 
+@provider(IFormFieldProvider)
 class ISocial(model.Schema, IAddressable):
     """Social media schema.
     """
@@ -139,13 +144,6 @@ class ISocial(model.Schema, IAddressable):
         description=_(u'help_instagram_url', default=u''),
         required=False
     )
-
-
-# Mark these interfaces as form field providers
-alsoProvides(IAddress, IFormFieldProvider)
-alsoProvides(IContact, IFormFieldProvider)
-alsoProvides(IPerson, IFormFieldProvider)
-alsoProvides(ISocial, IFormFieldProvider)
 
 
 @implementer(INameFromTitle)
