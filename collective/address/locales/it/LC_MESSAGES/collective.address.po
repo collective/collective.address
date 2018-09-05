@@ -1,25 +1,22 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2018-06-27 10:31+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2018-06-27 12:40+0000\n"
+"Last-Translator: Giacomo Monari <giacomo.monari@redturtle.it>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: it\n"
+"Language-Name: Italiano\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.address\n"
 
 #: ../configure.zcml:23
 msgid "Address"
-msgstr ""
+msgstr "Indirizzo"
 
 #: ../configure.zcml:23
 msgid "Address behavior."
@@ -27,7 +24,7 @@ msgstr ""
 
 #: ../configure.zcml:30
 msgid "Contact"
-msgstr ""
+msgstr "Contatto"
 
 #: ../configure.zcml:30
 msgid "Contact behavior (email, phone, website, ...)."
@@ -60,7 +57,7 @@ msgstr ""
 #. Default: "Select the country from the list."
 #: ../behaviors.py:46
 msgid "help_country"
-msgstr ""
+msgstr "Scegli una nazione dalla lista."
 
 #: ../behaviors.py:59
 msgid "help_email"
@@ -122,12 +119,12 @@ msgstr ""
 #. Default: "City"
 #: ../behaviors.py:40
 msgid "label_city"
-msgstr ""
+msgstr "Città"
 
 #. Default: "Country"
 #: ../behaviors.py:45
 msgid "label_country"
-msgstr ""
+msgstr "Nazione"
 
 #. Default: "Email"
 #: ../behaviors.py:58
@@ -147,7 +144,7 @@ msgstr ""
 #. Default: "First Name"
 #: ../behaviors.py:89
 msgid "label_first_name"
-msgstr ""
+msgstr "Nome"
 
 #. Default: "Google Plus URL"
 #: ../behaviors.py:138
@@ -162,22 +159,22 @@ msgstr ""
 #. Default: "Last Name"
 #: ../behaviors.py:94
 msgid "label_last_name"
-msgstr ""
+msgstr "Cognome"
 
 #. Default: "Mobile"
 #: ../behaviors.py:73
 msgid "label_mobile"
-msgstr ""
+msgstr "Cellulare"
 
 #. Default: "Phone"
 #: ../behaviors.py:68
 msgid "label_phone"
-msgstr ""
+msgstr "Telefono"
 
 #. Default: "Street"
 #: ../behaviors.py:30
 msgid "label_street"
-msgstr ""
+msgstr "Via"
 
 #. Default: "Twitter URL"
 #: ../behaviors.py:133
@@ -187,9 +184,9 @@ msgstr ""
 #. Default: "Website"
 #: ../behaviors.py:63
 msgid "label_website"
-msgstr ""
+msgstr "Sito web"
 
 #. Default: "Zip Code"
 #: ../behaviors.py:35
 msgid "label_zip_code"
-msgstr ""
+msgstr "CAP"

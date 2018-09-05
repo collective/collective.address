@@ -4,7 +4,14 @@ Changelog
 1.6 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Added italian translation.
+  [arsenico13]
+  
+- Added update.sh script for i18ndude taken directly from plonecli.
+  [arsenico13]
+
+- Updated DE .po file with the update.sh script.
+  [arsenico13]
 
 
 1.5 (2017-01-13)
