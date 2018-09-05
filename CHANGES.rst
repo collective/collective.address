@@ -6,8 +6,10 @@ Changelog
 
 - Added italian translation.
   [arsenico13]
+  
 - Added update.sh script for i18ndude taken directly from plonecli.
   [arsenico13]
+
 - Updated DE .po file with the update.sh script.
   [arsenico13]
 
