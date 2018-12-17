@@ -4,9 +4,12 @@ Changelog
 1.6 (unreleased)
 ----------------
 
+- Added french translation.
+  [bsuttor]
+
 - Added italian translation.
   [arsenico13]
-  
+
 - Added update.sh script for i18ndude taken directly from plonecli.
   [arsenico13]
 
