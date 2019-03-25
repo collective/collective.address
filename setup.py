@@ -43,6 +43,7 @@ setup(
         'zope.i18nmessageid',
         'zope.interface',
         'zope.schema',
+        'six',
     ],
     entry_points="""
     [z3c.autoinclude.plugin]

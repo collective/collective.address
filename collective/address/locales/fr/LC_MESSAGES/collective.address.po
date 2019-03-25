@@ -16,7 +16,8 @@ msgstr ""
 
 #: ../configure.zcml:23
 msgid "Address"
-msgstr "Adresse
+msgstr "Adresse"
+
 #: ../configure.zcml:23
 msgid "Address behavior."
 msgstr "Comportement d'adresse"

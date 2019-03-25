@@ -4,6 +4,9 @@ Changelog
 1.6 (unreleased)
 ----------------
 
+- Python 3 compatibilty
+  [petschki]
+
 - Added french translation.
   [bsuttor]
 
