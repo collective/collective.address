@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import six
+
 from collective.address import _
 from collective.address.vocabulary import get_pycountry_name
 from plone.app.content.interfaces import INameFromTitle
@@ -172,7 +174,7 @@ def _concat_and_utf8(*args):
     """
     result = ''
     for value in args:
-        if isinstance(value, unicode):
+        if six.PY2 and isinstance(value, six.text_type):
             value = value.encode('utf-8', 'replace')
         if value:
             result = ' '.join((result, value))
