@@ -34,7 +34,7 @@ class IAddress(model.Schema, IAddressable):
         required=False
     )
     zip_code = schema.TextLine(
-        title=_(u'label_zip_code', default=u'Zip Code'),
+        title=_(u'label_zip_code', default=u'Postal Code'),
         description=_(u'help_zip_code', default=u''),
         required=False
     )
