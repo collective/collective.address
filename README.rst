@@ -64,6 +64,7 @@ Finally, add the package's source to the ``mx.ini`` file.
 To actually download and install the new add-on, run the following command.
 
 ::
+
     make backend-build
 
 Now restart the backend.
@@ -117,6 +118,7 @@ If you want to play with the country codes in a Python shell, you can use the
 ``pycountry`` package like so:
 
 ::
+
     >>> import pycountry
     >>> austria = pycountry.countries.get(numeric='040')
     >>> austria
@@ -128,6 +130,7 @@ If you want to play with the country codes in a Python shell, you can use the
 You can install ``pycountry`` via pip:
 
 ::
+
     pip3 install pycountry
 
 For more information, see the `pycountry`_ documentation.
