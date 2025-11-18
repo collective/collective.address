@@ -19,7 +19,8 @@ setup(
     long_description=long_description,
     classifiers=[
       "Framework :: Plone",
-      "Programming Language :: Python",
+      "Framework :: Plone :: 6.1.2",
+      "Programming Language :: Python :: 3.12",
       ],
     keywords='plone collective address',
     author='Johannes Raggam',

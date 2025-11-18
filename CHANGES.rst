@@ -4,6 +4,9 @@ Changelog
 1.7 (unreleased)
 ----------------
 
+- Added more improvements about the add-on documentation.
+  [macagua]
+
 - Added spanish translation.
   [macagua]
 

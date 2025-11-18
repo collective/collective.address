@@ -151,6 +151,8 @@ class ISocial(model.Schema, IAddressable):
 @implementer(INameFromTitle)
 @adapter(IPerson)
 class NameFromPerson(object):
+    """Adapter to generate a title from a person's name.
+    """
 
     def __new__(cls, context):
         title = u'{0}{1}{2}'.format(
@@ -183,6 +185,8 @@ def _concat_and_utf8(*args):
 
 # Text indexing
 def searchable_text(obj):
+    """Create a searchable text from addressable behavior fields.
+    """
     items = []
 
     acc = IAddress(obj, None)

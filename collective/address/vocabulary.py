@@ -45,6 +45,8 @@ CountryVocabularyFactory = CountryVocabulary()
 
 
 def get_pycountry_name(country_id):
+    """Get the translated country name from pycountry by its numeric id.
+    """
     if not country_id:
         return None
     country = pycountry.countries.get(numeric=country_id)
