@@ -30,17 +30,17 @@ class IAddress(model.Schema, IAddressable):
     """
     street = schema.TextLine(
         title=_(u'label_street', default=u'Street'),
-        description=_(u'help_street', default=u''),
+        description=_(u'help_street', default=u'Enter the street and number.'),
         required=False
     )
     zip_code = schema.TextLine(
         title=_(u'label_zip_code', default=u'Postal Code'),
-        description=_(u'help_zip_code', default=u''),
+        description=_(u'help_zip_code', default=u'Enter the postal code.'),
         required=False
     )
     city = schema.TextLine(
         title=_(u'label_city', default=u'City'),
-        description=_(u'help_city', default=u''),
+        description=_(u'help_city', default=u'Enter the city.'),
         required=False
     )
     country = schema.Choice(
@@ -58,27 +58,27 @@ class IContact(model.Schema, IAddressable):
     """
     email = schema.TextLine(
         title=_(u'label_email', default=u'Email'),
-        description=_(u'help_email', default=u''),
+        description=_(u'help_email', default=u'Enter the email address.'),
         required=False
     )
     website = schema.URI(
         title=_(u'label_website', default=u'Website'),
-        description=_(u'help_website', default=u''),
+        description=_(u'help_website', default=u'Enter the website URL.'),
         required=False
     )
     phone = schema.TextLine(
         title=_(u'label_phone', default=u'Phone'),
-        description=_(u'help_phone', default=u''),
+        description=_(u'help_phone', default=u'Enter the phone number.'),
         required=False
     )
     mobile = schema.TextLine(
         title=_(u'label_mobile', default=u'Mobile'),
-        description=_(u'help_mobile', default=u''),
+        description=_(u'help_mobile', default=u'Enter the mobile phone number.'),
         required=False
     )
     fax = schema.TextLine(
         title=_(u'label_fax', default=u'Fax'),
-        description=_(u'help_fax', default=u''),
+        description=_(u'help_fax', default=u'Enter the fax number.'),
         required=False
     )
 
@@ -89,17 +89,17 @@ class IPerson(model.Schema, IAddressable):
     """
     first_name = schema.TextLine(
         title=_(u'label_first_name', default=u'First Name'),
-        description=_(u'help_first_name', default=u''),
+        description=_(u'help_first_name', default=u'Enter the first name.'),
         required=False
     )
     last_name = schema.TextLine(
         title=_(u'label_last_name', default=u'Last Name'),
-        description=_(u'help_last_name', default=u''),
+        description=_(u'help_last_name', default=u'Enter the last name.'),
         required=True
     )
     academic_title = schema.TextLine(
         title=_(u'label_academic_titel', default=u'Academic title'),
-        description=_(u'help_academic_title', default=u''),
+        description=_(u'help_academic_title', default=u'Enter the academic title.'),
         required=False
     )
 
@@ -128,22 +128,22 @@ class ISocial(model.Schema, IAddressable):
     """
     facebook_url = schema.URI(
         title=_(u'label_facebook_url', default=u'Facebook URL'),
-        description=_(u'help_facebook_url', default=u''),
+        description=_(u'help_facebook_url', default=u'Enter the Facebook URL.'),
         required=False
     )
     twitter_url = schema.URI(
         title=_(u'label_twitter_url', default=u'Twitter URL'),
-        description=_(u'help_twitter_url', default=u''),
+        description=_(u'help_twitter_url', default=u'Enter the Twitter URL.'),
         required=False
     )
     google_plus_url = schema.URI(
         title=_(u'label_google_plus_url', default=u'Google Plus URL'),
-        description=_(u'help_google_plus_url', default=u''),
+        description=_(u'help_google_plus_url', default=u'Enter the Google Plus URL.'),
         required=False
     )
     instagram_url = schema.URI(
         title=_(u'label_instagram_url', default=u'Instagram URL'),
-        description=_(u'help_instagram_url', default=u''),
+        description=_(u'help_instagram_url', default=u'Enter the Instagram URL.'),
         required=False
     )
 

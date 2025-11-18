@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-12-15 14:45+0000\n"
+"POT-Creation-Date: 2025-11-18 12:21+0000\n"
 "PO-Revision-Date: 2018-06-27 12:40+0000\n"
 "Last-Translator: Giacomo Monari <giacomo.monari@redturtle.it>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,147 +46,163 @@ msgstr ""
 msgid "Social media behavior (Facebook, Twitter, ...)."
 msgstr ""
 
-#: ../behaviors.py:100
+#. Default: "Enter the academic title."
+#: ../behaviors.py:102
 msgid "help_academic_title"
 msgstr ""
 
-#: ../behaviors.py:41
+#. Default: "Enter the city."
+#: ../behaviors.py:43
 msgid "help_city"
 msgstr ""
 
 #. Default: "Select the country from the list."
-#: ../behaviors.py:46
+#: ../behaviors.py:48
 msgid "help_country"
 msgstr "Scegli una nazione dalla lista."
 
-#: ../behaviors.py:59
+#. Default: "Enter the email address."
+#: ../behaviors.py:61
 msgid "help_email"
 msgstr ""
 
-#: ../behaviors.py:129
+#. Default: "Enter the Facebook URL."
+#: ../behaviors.py:131
 msgid "help_facebook_url"
 msgstr ""
 
-#: ../behaviors.py:79
+#. Default: "Enter the fax number."
+#: ../behaviors.py:81
 msgid "help_fax"
 msgstr ""
 
-#: ../behaviors.py:90
+#. Default: "Enter the first name."
+#: ../behaviors.py:92
 msgid "help_first_name"
 msgstr ""
 
-#: ../behaviors.py:139
+#. Default: "Enter the Google Plus URL."
+#: ../behaviors.py:141
 msgid "help_google_plus_url"
 msgstr ""
 
-#: ../behaviors.py:144
+#. Default: "Enter the Instagram URL."
+#: ../behaviors.py:146
 msgid "help_instagram_url"
 msgstr ""
 
-#: ../behaviors.py:95
+#. Default: "Enter the last name."
+#: ../behaviors.py:97
 msgid "help_last_name"
 msgstr ""
 
-#: ../behaviors.py:74
+#. Default: "Enter the mobile phone number."
+#: ../behaviors.py:76
 msgid "help_mobile"
 msgstr ""
 
-#: ../behaviors.py:69
+#. Default: "Enter the phone number."
+#: ../behaviors.py:71
 msgid "help_phone"
 msgstr ""
 
-#: ../behaviors.py:31
+#. Default: "Enter the street and number."
+#: ../behaviors.py:33
 msgid "help_street"
 msgstr ""
 
-#: ../behaviors.py:134
+#. Default: "Enter the Twitter URL."
+#: ../behaviors.py:136
 msgid "help_twitter_url"
 msgstr ""
 
-#: ../behaviors.py:64
+#. Default: "Enter the website URL."
+#: ../behaviors.py:66
 msgid "help_website"
 msgstr ""
 
-#: ../behaviors.py:36
+#. Default: "Enter the postal code."
+#: ../behaviors.py:38
 msgid "help_zip_code"
 msgstr ""
 
 #. Default: "Academic title"
-#: ../behaviors.py:99
+#: ../behaviors.py:101
 msgid "label_academic_titel"
 msgstr ""
 
 #. Default: "City"
-#: ../behaviors.py:40
+#: ../behaviors.py:42
 msgid "label_city"
 msgstr "Città"
 
 #. Default: "Country"
-#: ../behaviors.py:45
+#: ../behaviors.py:47
 msgid "label_country"
 msgstr "Nazione"
 
 #. Default: "Email"
-#: ../behaviors.py:58
+#: ../behaviors.py:60
 msgid "label_email"
 msgstr ""
 
 #. Default: "Facebook URL"
-#: ../behaviors.py:128
+#: ../behaviors.py:130
 msgid "label_facebook_url"
 msgstr ""
 
 #. Default: "Fax"
-#: ../behaviors.py:78
+#: ../behaviors.py:80
 msgid "label_fax"
 msgstr ""
 
 #. Default: "First Name"
-#: ../behaviors.py:89
+#: ../behaviors.py:91
 msgid "label_first_name"
 msgstr "Nome"
 
 #. Default: "Google Plus URL"
-#: ../behaviors.py:138
+#: ../behaviors.py:140
 msgid "label_google_plus_url"
 msgstr ""
 
 #. Default: "Instagram URL"
-#: ../behaviors.py:143
+#: ../behaviors.py:145
 msgid "label_instagram_url"
 msgstr ""
 
 #. Default: "Last Name"
-#: ../behaviors.py:94
+#: ../behaviors.py:96
 msgid "label_last_name"
 msgstr "Cognome"
 
 #. Default: "Mobile"
-#: ../behaviors.py:73
+#: ../behaviors.py:75
 msgid "label_mobile"
 msgstr "Cellulare"
 
 #. Default: "Phone"
-#: ../behaviors.py:68
+#: ../behaviors.py:70
 msgid "label_phone"
 msgstr "Telefono"
 
 #. Default: "Street"
-#: ../behaviors.py:30
+#: ../behaviors.py:32
 msgid "label_street"
 msgstr "Via"
 
 #. Default: "Twitter URL"
-#: ../behaviors.py:133
+#: ../behaviors.py:135
 msgid "label_twitter_url"
 msgstr ""
 
 #. Default: "Website"
-#: ../behaviors.py:63
+#: ../behaviors.py:65
 msgid "label_website"
 msgstr "Sito web"
 
-#. Default: "Zip Code"
-#: ../behaviors.py:35
+#. Default: "Postal Code"
+#: ../behaviors.py:37
+#, fuzzy
 msgid "label_zip_code"
 msgstr "CAP"

@@ -4,7 +4,8 @@ Changelog
 1.7 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Added more improvements about i18n support.
+  [macagua]
 
 
 1.6 (2019-06-07)
