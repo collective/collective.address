@@ -1,0 +1,213 @@
+# Translation of collective.address.pot to Spanish
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.address\n"
+"POT-Creation-Date: 2025-11-18 12:21+0000\n"
+"PO-Revision-Date: 2025-11-18 12:47+0100\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Code: es\n"
+"Language-Name: Español\n"
+"Preferred-Encodings: utf-8\n"
+"Domain: collective.address\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: es\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+"X-Generator: Poedit 3.8\n"
+
+#: ../configure.zcml:23
+msgid "Address"
+msgstr "Dirección"
+
+#: ../configure.zcml:23
+msgid "Address behavior."
+msgstr "Comportamiento de dirección"
+
+#: ../configure.zcml:30
+msgid "Contact"
+msgstr "Contacto"
+
+#: ../configure.zcml:30
+msgid "Contact behavior (email, phone, website, ...)."
+msgstr "Comportamiento de Contacto (correo electrónico, teléfono, sitio web, etc.)."
+
+#: ../configure.zcml:37
+msgid "Person"
+msgstr "Persona"
+
+#: ../configure.zcml:37
+msgid "Person behavior (name and title)."
+msgstr "Comportamiento de Persona (nombre y cargo)."
+
+#: ../configure.zcml:44
+msgid "Social"
+msgstr "Redes sociales"
+
+#: ../configure.zcml:44
+msgid "Social media behavior (Facebook, Twitter, ...)."
+msgstr "Comportamiento de redes sociales (Facebook, X, etc.)."
+
+#. Default: "Enter the academic title."
+#: ../behaviors.py:102
+msgid "help_academic_title"
+msgstr ""
+
+#. Default: "Enter the city."
+#: ../behaviors.py:43
+msgid "help_city"
+msgstr "Introduzca la ciudad."
+
+#. Default: "Select the country from the list."
+#: ../behaviors.py:48
+msgid "help_country"
+msgstr "Seleccione el país de la lista."
+
+#. Default: "Enter the email address."
+#: ../behaviors.py:61
+msgid "help_email"
+msgstr "Introduzca la dirección de correo electrónico."
+
+#. Default: "Enter the Facebook URL."
+#: ../behaviors.py:131
+msgid "help_facebook_url"
+msgstr "Introduzca la URL de Facebook."
+
+#. Default: "Enter the fax number."
+#: ../behaviors.py:81
+msgid "help_fax"
+msgstr "Introduzca el número de fax."
+
+#. Default: "Enter the first name."
+#: ../behaviors.py:92
+msgid "help_first_name"
+msgstr "Introduzca el nombre."
+
+#. Default: "Enter the Google Plus URL."
+#: ../behaviors.py:141
+msgid "help_google_plus_url"
+msgstr "Introduzca la URL de Google Plus."
+
+#. Default: "Enter the Instagram URL."
+#: ../behaviors.py:146
+msgid "help_instagram_url"
+msgstr "Introduzca la URL de Instagram."
+
+#. Default: "Enter the last name."
+#: ../behaviors.py:97
+msgid "help_last_name"
+msgstr "Introduzca el apellido."
+
+#. Default: "Enter the mobile phone number."
+#: ../behaviors.py:76
+msgid "help_mobile"
+msgstr "Introduzca el número de teléfono móvil."
+
+#. Default: "Enter the phone number."
+#: ../behaviors.py:71
+msgid "help_phone"
+msgstr "Introduzca el número de teléfono."
+
+#. Default: "Enter the street and number."
+#: ../behaviors.py:33
+msgid "help_street"
+msgstr "Introduzca la calle y el número."
+
+#. Default: "Enter the Twitter URL."
+#: ../behaviors.py:136
+msgid "help_twitter_url"
+msgstr "Introduzca la URL de X."
+
+#. Default: "Enter the website URL."
+#: ../behaviors.py:66
+msgid "help_website"
+msgstr "Introduzca la URL del sitio web."
+
+#. Default: "Enter the postal code."
+#: ../behaviors.py:38
+msgid "help_zip_code"
+msgstr "Introduzca el código postal."
+
+#. Default: "Academic title"
+#: ../behaviors.py:101
+msgid "label_academic_titel"
+msgstr "Título académico"
+
+#. Default: "City"
+#: ../behaviors.py:42
+msgid "label_city"
+msgstr "Ciudad"
+
+#. Default: "Country"
+#: ../behaviors.py:47
+msgid "label_country"
+msgstr "País"
+
+#. Default: "Email"
+#: ../behaviors.py:60
+msgid "label_email"
+msgstr "Correo electrónico"
+
+#. Default: "Facebook URL"
+#: ../behaviors.py:130
+msgid "label_facebook_url"
+msgstr "URL de Facebook"
+
+#. Default: "Fax"
+#: ../behaviors.py:80
+msgid "label_fax"
+msgstr "Fax"
+
+#. Default: "First Name"
+#: ../behaviors.py:91
+msgid "label_first_name"
+msgstr "Nombre"
+
+#. Default: "Google Plus URL"
+#: ../behaviors.py:140
+msgid "label_google_plus_url"
+msgstr "URL de Google Plus"
+
+#. Default: "Instagram URL"
+#: ../behaviors.py:145
+msgid "label_instagram_url"
+msgstr "URL de Instagram"
+
+#. Default: "Last Name"
+#: ../behaviors.py:96
+msgid "label_last_name"
+msgstr "Apellido"
+
+#. Default: "Mobile"
+#: ../behaviors.py:75
+msgid "label_mobile"
+msgstr "Móvil"
+
+#. Default: "Phone"
+#: ../behaviors.py:70
+msgid "label_phone"
+msgstr "Teléfono"
+
+#. Default: "Street"
+#: ../behaviors.py:32
+msgid "label_street"
+msgstr "Calle"
+
+#. Default: "Twitter URL"
+#: ../behaviors.py:135
+msgid "label_twitter_url"
+msgstr "URL de X"
+
+#. Default: "Website"
+#: ../behaviors.py:65
+msgid "label_website"
+msgstr "Sitio web"
+
+#. Default: "Postal Code"
+#: ../behaviors.py:37
+msgid "label_zip_code"
+msgstr "Código Postal"

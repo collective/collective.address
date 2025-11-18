@@ -4,6 +4,9 @@ Changelog
 1.7 (unreleased)
 ----------------
 
+- Added spanish translation.
+  [macagua]
+
 - Added more improvements about i18n support.
   [macagua]
 
