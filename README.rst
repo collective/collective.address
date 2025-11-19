@@ -5,7 +5,7 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
 - ``IAddress`` behavior, some fields to describe the ``Address`` data.
 
-.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/iaddress_behavior.png
+.. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/iaddress_behavior.png
     :align: center
     :height: 79px
     :width: 732px
@@ -15,7 +15,7 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
 ----
 
-.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/address_schema.png
+.. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/address_schema.png
     :align: center
     :height: 341px
     :width: 737px
@@ -25,7 +25,7 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
 - ``IContact`` behavior, some fields to describe the ``Contact`` data.
 
-.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/icontact_behavior.png
+.. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/icontact_behavior.png
     :align: center
     :height: 75px
     :width: 788px
@@ -35,7 +35,7 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
 ----
 
-.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/contact_schema.png
+.. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/contact_schema.png
     :align: center
     :height: 77px
     :width: 876px
@@ -45,7 +45,7 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
 - ``IPerson`` behavior, some fields to describe the ``Person`` data.
 
-.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/iperson_behavior.png
+.. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/iperson_behavior.png
     :align: center
     :height: 75px
     :width: 745px
@@ -55,7 +55,7 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
 ----
 
-.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/person_schema.png
+.. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/person_schema.png
     :align: center
     :height: 501px
     :width: 800px
@@ -65,7 +65,7 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
 - ``ISocial`` behavior, some fields to describe the ``Person`` data.
 
-.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/isocial_behavior.png
+.. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/isocial_behavior.png
     :align: center
     :height: 196px
     :width: 800px
@@ -75,7 +75,7 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
 ----
 
-.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/social_media_schema.png
+.. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/social_media_schema.png
     :align: center
     :height: 492px
     :width: 467px
