@@ -67,8 +67,8 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
 .. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/isocial_behavior.png
     :align: center
-    :height: 196px
-    :width: 800px
+    :height: 81px
+    :width: 778px
     :alt: The ISocial Behavior
 
     The ``ISocial`` Behavior.
