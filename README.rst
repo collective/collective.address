@@ -5,83 +5,83 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
 - ``IAddress`` behavior, some fields to describe the ``Address`` data.
 
-   .. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/iaddress_behavior.png
-      :align: center
-      :height: 79px
-      :width: 732px
-      :alt: The IAddress Behavior
+.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/iaddress_behavior.png
+    :align: center
+    :height: 79px
+    :width: 732px
+    :alt: The IAddress Behavior
 
-      The ``IAddress`` Behavior.
+    The ``IAddress`` Behavior.
 
-   ----
+----
 
-   .. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/address_schema.png
-      :align: center
-      :height: 341px
-      :width: 737px
-      :alt: Using the IAddress Behavior into a custom content type.
+.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/address_schema.png
+    :align: center
+    :height: 341px
+    :width: 737px
+    :alt: Using the IAddress Behavior into a custom content type.
 
-      Using the ``IAddress`` Behavior into a custom content type.
+    Using the ``IAddress`` Behavior into a custom content type.
 
 - ``IContact`` behavior, some fields to describe the ``Contact`` data.
 
-   .. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/icontact_behavior.png
-      :align: center
-      :height: 75px
-      :width: 788px
-      :alt: The IContact Behavior
+.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/icontact_behavior.png
+    :align: center
+    :height: 75px
+    :width: 788px
+    :alt: The IContact Behavior
 
-      The ``IContact`` Behavior.
+    The ``IContact`` Behavior.
 
-   ----
+----
 
-   .. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/contact_schema.png
-      :align: center
-      :height: 77px
-      :width: 876px
-      :alt: Using the IContact Behavior into a custom content type
+.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/contact_schema.png
+    :align: center
+    :height: 77px
+    :width: 876px
+    :alt: Using the IContact Behavior into a custom content type
 
-      Using the ``IContact`` Behavior into a custom content type.
+    Using the ``IContact`` Behavior into a custom content type.
 
 - ``IPerson`` behavior, some fields to describe the ``Person`` data.
 
-   .. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/iperson_behavior.png
-      :align: center
-      :height: 75px
-      :width: 745px
-      :alt: The IPerson Behavior
+.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/iperson_behavior.png
+    :align: center
+    :height: 75px
+    :width: 745px
+    :alt: The IPerson Behavior
 
-      The ``IPerson`` Behavior.
+    The ``IPerson`` Behavior.
 
-   ----
+----
 
-   .. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/person_schema.png
-      :align: center
-      :height: 501px
-      :width: 800px
-      :alt: Using the IPerson Behavior into a custom content type
+.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/person_schema.png
+    :align: center
+    :height: 501px
+    :width: 800px
+    :alt: Using the IPerson Behavior into a custom content type
 
-      Using the ``IPerson`` Behavior into a custom content type.
+    Using the ``IPerson`` Behavior into a custom content type.
 
 - ``ISocial`` behavior, some fields to describe the ``Person`` data.
 
-   .. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/isocial_behavior.png
-      :align: center
-      :height: 196px
-      :width: 800px
-      :alt: The ISocial Behavior
+.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/isocial_behavior.png
+    :align: center
+    :height: 196px
+    :width: 800px
+    :alt: The ISocial Behavior
 
-      The ``ISocial`` Behavior.
+    The ``ISocial`` Behavior.
 
-   ----
+----
 
-   .. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/social_media_schema.png
-      :align: center
-      :height: 492px
-      :width: 467px
-      :alt: Using the ISocial Behavior into a custom content type.
+.. figure:: https://raw.githubusercontent.com/collective/collective.addressr/refs/heads/master/docs/images/social_media_schema.png
+    :align: center
+    :height: 492px
+    :width: 467px
+    :alt: Using the ISocial Behavior into a custom content type.
 
-      Using the ``ISocial`` Behavior into a custom content type.
+    Using the ``ISocial`` Behavior into a custom content type.
 
 
 Examples
