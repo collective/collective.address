@@ -3,7 +3,7 @@ collective.address
 
 This package provides some `Dexterity behavior`_ to be used in `Dexterity based types`_ for:
 
-- ``IAddress`` behavior, some fields to describe the ``Address`` data.
+``IAddress`` behavior, some fields to describe the ``Address`` data.
 
 .. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/iaddress_behavior.png
     :align: center
@@ -13,8 +13,6 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
     The ``IAddress`` Behavior.
 
-----
-
 .. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/address_schema.png
     :align: center
     :height: 341px
@@ -23,7 +21,9 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
     Using the ``IAddress`` Behavior into a custom content type.
 
-- ``IContact`` behavior, some fields to describe the ``Contact`` data.
+----
+
+``IContact`` behavior, some fields to describe the ``Contact`` data.
 
 .. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/icontact_behavior.png
     :align: center
@@ -33,17 +33,17 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
     The ``IContact`` Behavior.
 
-----
-
 .. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/contact_schema.png
     :align: center
-    :height: 77px
-    :width: 876px
+    :height: 196px
+    :width: 800px
     :alt: Using the IContact Behavior into a custom content type
 
     Using the ``IContact`` Behavior into a custom content type.
 
-- ``IPerson`` behavior, some fields to describe the ``Person`` data.
+----
+
+``IPerson`` behavior, some fields to describe the ``Person`` data.
 
 .. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/iperson_behavior.png
     :align: center
@@ -53,17 +53,17 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
     The ``IPerson`` Behavior.
 
-----
-
 .. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/person_schema.png
     :align: center
-    :height: 501px
-    :width: 800px
+    :height: 81px
+    :width: 778px
     :alt: Using the IPerson Behavior into a custom content type
 
     Using the ``IPerson`` Behavior into a custom content type.
 
-- ``ISocial`` behavior, some fields to describe the ``Person`` data.
+----
+
+``ISocial`` behavior, some fields to describe the ``Person`` data.
 
 .. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/isocial_behavior.png
     :align: center
@@ -73,8 +73,6 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
 
     The ``ISocial`` Behavior.
 
-----
-
 .. figure:: https://raw.githubusercontent.com/collective/collective.address/refs/heads/master/docs/images/social_media_schema.png
     :align: center
     :height: 492px
@@ -82,6 +80,8 @@ This package provides some `Dexterity behavior`_ to be used in `Dexterity based 
     :alt: Using the ISocial Behavior into a custom content type.
 
     Using the ``ISocial`` Behavior into a custom content type.
+
+----
 
 
 Examples
