@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.7 (unreleased)
+1.7 (2026-03-29)
 ----------------
 
 - Added more improvements about the add-on documentation.
