@@ -1,6 +1,6 @@
 include *.md
 recursive-include docs *
-recursive-include collective *
+recursive-include src *
 global-include *.mo
 global-exclude *.pyc
 prune news/
