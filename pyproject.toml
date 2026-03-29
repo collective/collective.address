@@ -6,6 +6,54 @@ requires = ["setuptools>=68.2,<83", "wheel"]
 
 
 
+# START-MARKER-MANUAL-CONFIG
+# Anything from here until END-MARKER-MANUAL-CONFIG
+# will be kept by plone.meta
+
+[project]
+name = "collective.address"
+version = "2.0.dev0"
+description = "Dexterity address behavior."
+classifiers = [
+    "Framework :: Plone",
+    "Framework :: Plone :: 6.2",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Development Status :: 5 - Production/Stable",
+]
+license = "GPL-2.0-only"
+dynamic = ["readme"]
+requires-python = ">=3.10"
+authors = [
+    {name = "Johannes Raggam",email = "thetetet@gmail.com"},
+]
+dependencies = [
+    "plone.api",
+    "plone.app.content",
+    "plone.autoform",
+    "plone.behavior",
+    "plone.i18n",
+    "plone.indexer",
+    "plone.supermodel",
+    "Products.CMFPlone",
+    "pycountry",
+    "six",
+    "z3c.form",
+]
+keywords = ["plone", "collective", "address"]
+
+[project.optional-dependencies]
+test = []
+
+[project.urls]
+Source = "https://github.com/collective/collective.address"
+Issues = "https://github.com/collective/collective.address/issues"
+Changelog = "https://github.com/collective/collective.address/blob/master/CHANGES.md"
+# END-MARKER-MANUAL-CONFIG
+
 [tool.towncrier]
 directory = "news/"
 filename = "CHANGES.md"
@@ -169,3 +217,7 @@ ignore = [
 #  _your own configuration lines_
 #  """
 ##
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md", "CHANGES.md"]}
+
