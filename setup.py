@@ -1,6 +1,5 @@
 """Installer for the bda.aaf.site package."""
 
-from setuptools import find_packages
 from setuptools import setup
 
 version = "2.0.dev0"
@@ -27,7 +26,6 @@ setup(
         "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: 3.13",
         "Programming Language :: Python :: 3.14",
-        "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "Development Status :: 5 - Production/Stable",
     ],
     python_requires=">=3.10",
@@ -36,9 +34,6 @@ setup(
     author_email="thetetet@gmail.com",
     url="https://github.com/collective/collective.address",
     license="GPL version 2",
-    packages=find_packages("src"),
-    package_dir={"": "src"},
-    namespace_packages=["collective"],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
@@ -51,7 +46,6 @@ setup(
         "plone.supermodel",
         "Products.CMFPlone",
         "pycountry",
-        "setuptools",
         "six",
         "z3c.form",
     ],
