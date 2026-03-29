@@ -14,7 +14,7 @@
 
 ## 1.6 (2019-06-07)
 
-- Python 3 compatibilty \[petschki\]
+- Python 3 compatibility \[petschki\]
 - Added french translation. \[bsuttor\]
 - Added italian translation. \[arsenico13\]
 - Added update.sh script for i18ndude taken directly from plonecli.
@@ -47,7 +47,7 @@
 
 - Let IAddressable not derive from schema.Model to have a pure marker
   Interface. \[thet\]
-- Make sure, all SearchableText parts are seperated by a space. \[thet\]
+- Make sure, all SearchableText parts are separated by a space. \[thet\]
 
 ## 1.2 (2015-07-15)
 
